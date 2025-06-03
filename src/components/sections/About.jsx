@@ -1,15 +1,31 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
-    const frontendSkills = [
-        "React",
-        "Vue",
-        "TypeScript",
-        "TailwindCSS",
-        "Svelte",
+    const dataengineerSkills = [
+        "Python",
+        "Airflow",
+        "DBT",
+        "GCP",
+        "Terraform",
+        "Docker"
     ];
 
-    const backendSkills = ["Node.js", "Python", "AWS", "MongoDB", "GraphQL"];
+    const datascientistSkills = [
+        "Python",
+        "TensorFlow",
+        "Pandas",
+        "Numpy",
+        "OpenCV",
+        "MediaPipe"
+    ];
+
+    const frontendSkills = [
+        "Outsystems",
+        "Tailwind CSS",
+        "JavaScript",
+    ];
+
+    const backendSkills = ["Python", "Flask", "Node.js", "GCP", "PostgreSQL", "Outsystems"];
 
     return (
         <section
@@ -28,11 +44,11 @@ export const About = () => {
                             Highly motivated Data Engineering enthusiast skilled in SQL, Python, ETL pipelines, and big data technologies (including Google Cloud Platform). Proven ability in data processing, modeling, PostgreSQL management, and workflow orchestration with Apache Airflow and Docker, gained through hands-on projects and an Informatics degree. Passionate about optimizing data pipelines and empowering data-driven decisions. Seeking opportunities to contribute to impactful data solutions and grow in Data Engineering and Analytics.
                         </p>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                                <h3 className="text-slate-800 text-xl font-bold mb-4"> Data Engineer</h3>
+                                <h3 className="text-slate-800 text-xl font-bold mb-4">Data Engineer</h3>
                                 <div className="flex flex-wrap gap-2">
-                                    {frontendSkills.map((tech, key) => (
+                                    {dataengineerSkills.map((tech, key) => (
                                         <span
                                             key={key}
                                             className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
@@ -45,14 +61,47 @@ export const About = () => {
                                 </div>
                             </div>
 
+
                             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                                <h3 className="text-slate-800 text-xl font-bold mb-4"> Backend</h3>
+                                <h3 className="text-slate-800 text-xl font-bold mb-4">Data Scientist</h3>
+                                <div className="flex flex-wrap gap-2">
+                                    {datascientistSkills.map((tech, key) => (
+                                        <span
+                                            key={key}
+                                            className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
+                                    hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition
+                    "
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                                <h3 className="text-slate-800 text-xl font-bold mb-4">Backend</h3>
                                 <div className="flex flex-wrap gap-2">
                                     {backendSkills.map((tech, key) => (
                                         <span
                                             key={key}
                                             className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
                                     hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition
+                    "
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                                <h3 className="text-slate-800 text-xl font-bold mb-4">Frontend</h3>
+                                <div className="flex flex-wrap gap-2">
+                                    {frontendSkills.map((tech, key) => (
+                                        <span
+                                            key={key}
+                                            className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
+                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition
                     "
                                         >
                                             {tech}
