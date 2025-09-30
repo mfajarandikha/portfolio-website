@@ -12,15 +12,11 @@ export const Contact = () => {
                         Get In Touch
                     </h2>
                     <p className="text-lg text-gray-700 mb-4">
-                        I’d love to hear from you! Feel free to reach out anytime via
-                        email:
+                        I’d love to hear from you! Feel free to reach out anytime at:
                     </p>
-                    <a
-                        href="mailto:youremail@example.com"
-                        className="text-xl font-semibold text-blue-600 hover:underline"
-                    >
-                        youremail@example.com
-                    </a>
+                    <p className="text-xl font-semibold text-blue-600">
+                        mfajarandikhaa@gmail.com
+                    </p>
                 </div>
             </RevealOnScroll>
         </section>
